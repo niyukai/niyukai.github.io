@@ -6,3 +6,18 @@
        <style>h1 {color:aqua;text-align:center;font-size:80px;background: hotpink;}</style>
         <style>h2{color:gold;text-align: center;font-size: 40px;}</style>
 </html>
+import numpy as np
+import matplotlib.pyplot as plt
+
+x=np.linspace(-5,5,80)
+
+plt.figure()
+plt.plot(x,np.sin(x-3))
+plt.plot(-x,np.sin(x-3))
+
+plt.figure()
+y=np.sin(x-3)
+plt.stem(x,y)
+plt.stem(-x,y)
+
+plt.show()
