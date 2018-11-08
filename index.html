@@ -3,21 +3,8 @@
         <title>niyukai</title> </head>
    <body ></body><h1>niyukai</h1>
    <h2>信号与系统作业</h2><body>
+       <h3>傅舒婷最丑</h3></body>
        <style>h1 {color:aqua;text-align:center;font-size:80px;background: hotpink;}</style>
         <style>h2{color:gold;text-align: center;font-size: 40px;}</style>
+        <style>h3{color:brown;text-align: center;font-size: 150px;}</style>
 </html>
-import numpy as np
-import matplotlib.pyplot as plt
-
-x=np.linspace(-5,5,80)
-
-plt.figure()
-plt.plot(x,np.sin(x-3))
-plt.plot(-x,np.sin(x-3))
-
-plt.figure()
-y=np.sin(x-3)
-plt.stem(x,y)
-plt.stem(-x,y)
-
-plt.show()
